@@ -1,0 +1,12 @@
+*, body, html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  background-color: #2E3DBE;
+}
+/*# sourceMappingURL=main.css.map */
