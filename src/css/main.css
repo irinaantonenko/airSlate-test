@@ -35,7 +35,7 @@ body {
   padding: 3.33rem 1.67rem;
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1270px) {
   .login {
     padding: 4rem 30rem 13rem;
   }
@@ -45,13 +45,7 @@ body {
   width: 8.33rem;
 }
 
-@media (max-width: 1280px) {
-  .login__img {
-    width: 12.5rem;
-  }
-}
-
-@media (min-width: 1280px) {
+@media (min-width: 1270px) {
   .login__img {
     width: 12.5rem;
   }
@@ -76,7 +70,7 @@ body {
   border-radius: 0.67rem;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1270px) {
   .login__form {
     width: 50rem;
   }
@@ -106,13 +100,7 @@ body {
   }
 }
 
-@media (max-width: 1280px) {
-  .login__form {
-    padding: 4rem;
-  }
-}
-
-@media (min-width: 1280px) {
+@media (min-width: 1270px) {
   .login__form {
     padding: 4rem;
   }
@@ -126,27 +114,14 @@ body {
   margin-bottom: 0.83rem;
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1270px) {
   .login__subtitle {
     font-size: 2rem;
     line-height: 2.67rem;
   }
 }
 
-@media (min-width: 1280px) {
-  .login__subtitle {
-    font-size: 2rem;
-    line-height: 2.67rem;
-  }
-}
-
-@media (max-width: 1280px) {
-  .login__subtitle {
-    margin-bottom: 1.67rem;
-  }
-}
-
-@media (min-width: 1280px) {
+@media (min-width: 1270px) {
   .login__subtitle {
     margin-bottom: 1.67rem;
   }
@@ -163,13 +138,7 @@ body {
   margin-bottom: 0.83rem;
 }
 
-@media (max-width: 1280px) {
-  .login__block {
-    margin-bottom: 1.67rem;
-  }
-}
-
-@media (min-width: 1280px) {
+@media (min-width: 1270px) {
   .login__block {
     margin-bottom: 1.67rem;
   }
@@ -195,13 +164,7 @@ body {
   color: #959595;
 }
 
-@media (max-width: 1280px) {
-  .login__input {
-    font-size: 1.17rem;
-  }
-}
-
-@media (min-width: 1280px) {
+@media (min-width: 1270px) {
   .login__input {
     font-size: 1.17rem;
   }
@@ -265,13 +228,7 @@ body {
   margin-bottom: 0.83rem;
 }
 
-@media (max-width: 1280px) {
-  .login__button {
-    margin-bottom: 1.67rem;
-  }
-}
-
-@media (min-width: 1280px) {
+@media (min-width: 1270px) {
   .login__button {
     margin-bottom: 1.67rem;
   }
@@ -293,25 +250,13 @@ body {
   margin-bottom: 0.83rem;
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1270px) {
   .login__text {
     font-size: 1.17rem;
   }
 }
 
-@media (min-width: 1280px) {
-  .login__text {
-    font-size: 1.17rem;
-  }
-}
-
-@media (max-width: 1280px) {
-  .login__text {
-    margin-bottom: 1.67rem;
-  }
-}
-
-@media (min-width: 1280px) {
+@media (min-width: 1270px) {
   .login__text {
     margin-bottom: 1.67rem;
   }

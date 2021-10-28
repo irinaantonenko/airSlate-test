@@ -20,14 +20,11 @@ body {
     @include flex-c-c;
     justify-content: space-evenly;
     padding: 3.33rem 1.67rem;
-    @include _1280 {
+    @include _1280min {
         padding: 4rem 30rem 13rem;
     }
     &__img {
         width: 8.33rem;
-        @include _1280 {
-            width: 12.5rem;
-        }
         @include _1280min {
             width: 12.5rem;
         }
@@ -39,9 +36,6 @@ body {
         background: $color-light;
         box-shadow: 0px 0.67rem 3.33rem $color-shadow;
         border-radius: 0.67rem;
-        @include _1280 {
-            padding: 4rem;
-        }
         @include _1280min {
             padding: 4rem;
         }
@@ -50,9 +44,6 @@ body {
         @include font-big;
         color: $color-title;
         margin-bottom: 0.83rem;
-        @include _1280 {
-            margin-bottom: 1.67rem;  
-        }
         @include _1280min {
             margin-bottom: 1.67rem;  
         }
@@ -61,9 +52,6 @@ body {
         display: flex;
         flex-direction: column;
         margin-bottom: 0.83rem;
-        @include _1280 {
-            margin-bottom: 1.67rem;  
-        }
         @include _1280min {
             margin-bottom: 1.67rem;  
         }
@@ -123,10 +111,7 @@ body {
         font-size: 1.17rem;
         line-height: 1.33rem;
         color: $color-light;
-        margin-bottom: 0.83rem;
-        @include _1280 {
-            margin-bottom: 1.67rem;
-        }
+        margin-bottom: 0.83rem;        
         @include _1280min {
             margin-bottom: 1.67rem;
         }
@@ -143,9 +128,6 @@ body {
         text-align: center;
         overflow: hidden;
         margin-bottom: 0.83rem;
-        @include _1280 {
-            margin-bottom: 1.67rem;
-        }
         @include _1280min {
             margin-bottom: 1.67rem;
         }
