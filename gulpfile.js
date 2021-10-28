@@ -15,11 +15,14 @@ const sass = require('gulp-sass')(require('sass'));
 ]*/
 const cssFiles = [
     './src/css/variables.scss',
+    './src/css/mixins.scss',
     './src/css/main.scss'   
 ]
 
 const jsFiles = [
-    './src/js/lib.js',
+    './src/js/jquery-3.6.0.min.js',
+    './src/js/materialize.min.js',
+    './src/js/jquery.validate.min.js',
     './src/js/main.js'
 ]
 
@@ -31,7 +34,7 @@ function styles () {
     .pipe(concat('style.css'))
     
     .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
+        overrideBrowserslist: ['last 2 versions'],
         cascade: false
     }))
     .pipe(cleanCSS({
@@ -62,7 +65,6 @@ function watch() {
             baseDir: "./"
         }
     });
-   //gulp.watch('./src/css/**/*.css', styles)
     gulp.watch('./src/css/**/*.scss', styles)
     gulp.watch('./src/css/**/*.sass', styles)
     gulp.watch('./src/js/**/*.js', scripts)
