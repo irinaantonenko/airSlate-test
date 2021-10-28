@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
+const htmlmin = require('gulp-htmlmin');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const del = require('del');
@@ -20,11 +21,16 @@ const cssFiles = [
 ]
 
 const jsFiles = [
-    './src/js/jquery-3.6.0.min.js',
-    './src/js/materialize.min.js',
-    './src/js/jquery.validate.min.js',
     './src/js/main.js'
 ]
+function html () {
+    return gulp.src('./**/*.html')
+    .pipe(htmlmin({
+        collapseWhitespace: true, 
+        removeComments: true 
+      }))    
+    .pipe(gulp.dest('./build/'))   
+}
 
 function styles () {
     return gulp.src(cssFiles)
@@ -71,9 +77,10 @@ function watch() {
     gulp.watch("./*.html").on('change', browserSync.reload)
 }
 
+gulp.task('html', html);
 gulp.task('styles', styles);
 gulp.task('scripts', scripts);
 gulp.task('del', clean);
 gulp.task('watch', watch);
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts, html)));
 gulp.task('dev', gulp.series('build','watch'));

@@ -9,3 +9,22 @@ form.addEventListener('submit', function (event) {
   console.log('password: ', password.value)
   console.log('email ', email.value)
 })
+
+
+
+
+fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json')
+.then(response =>{
+    return response.json()
+})
+.then(result =>{
+    console.log(result);
+    let currency = {}
+    currency.eur = result.filter(el => {
+        return el.cc == 'EUR'
+    })
+    currency.usd = result.filter(el => {
+        return el.cc == 'USD'
+    })
+    console.log(currency);
+})
